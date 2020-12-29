@@ -1,0 +1,64 @@
+/********** STYLES PROJET #2: BOUTIQUE ECOMMERCE *********
+
+Les styles de ce fichier servent à se concentrer principalement sur
+l'utilisation des composants et ne modifient que très peu l'esthétique de la page.
+
+Vous pouvez toutefois l'analyser et le manipuler plus en détail 
+si vous souhaitez vous familiariser un peu plus avec le CSS.
+
+Bonne session,
+Valentin
+
+ ************************************************/
+
+ /********** STYLE DU TOAST **********/
+
+.toast {
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+    z-index: 100;
+}
+
+/********** STYLE DU CAROUSEL **********/
+
+#carousel-boutique img {
+    max-height: 60vh;
+    object-fit: cover;
+}
+
+/********** STYLE DES CARDS / LISTE DE PRODUITS **********/
+
+.card {
+    transition: .3s ease-out;
+}
+
+.card:hover {
+    -webkit-box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.10);
+    box-shadow: 10px 10px 48px 0px rgba(0,0,0,0.10);
+}
+
+.card-body a {
+    color: #000000;
+    text-decoration: none;
+    transition: .3s ease-out;
+}
+
+.card-body a:hover {
+    color: #0275d8;
+}
+
+@media (max-width: 768px) {
+    .card img {
+        max-height: 300px;
+        object-fit:  contain;
+    }
+}
+
+/********** STYLE DU FOOTER **********/
+
+.footer {
+    background: #F1F1F1;
+    padding: 40px 0;
+}
